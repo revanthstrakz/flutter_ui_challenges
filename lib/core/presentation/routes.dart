@@ -12,6 +12,7 @@ import 'package:flutter_ui_challenges/src/pages/blog/sports_news1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/cart2.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/checkout1.dart';
 import 'package:flutter_ui_challenges/src/pages/ecommerce/ecommerce4.dart';
+import 'package:flutter_ui_challenges/src/pages/food/food_checkout.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inauth.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/inlanding.dart';
 import 'package:flutter_ui_challenges/src/pages/invitation/invitation1.dart';
@@ -23,6 +24,7 @@ import 'package:flutter_ui_challenges/src/pages/misc/gallery1.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/image_popup.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer.dart';
 import 'package:flutter_ui_challenges/src/pages/misc/musicplayer2.dart';
+import 'package:flutter_ui_challenges/src/pages/navigation/menu1.dart';
 import 'package:flutter_ui_challenges/src/pages/onboarding/intro6.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile8.dart';
 import 'package:flutter_ui_challenges/src/pages/profile/profile9.dart';
@@ -211,6 +213,8 @@ final List<dynamic> pages = [
         path: DashboardThreePage.path),
   ]),
   MenuItem(title: "Food", icon: Icons.fastfood, items: [
+    SubMenuItem("Food Order Checkout", FoodCheckoutOnePage(),
+        path: FoodCheckoutOnePage.path),
     SubMenuItem("Fruits Add to Cart", AvocadoPage(), path: AvocadoPage.path),
     SubMenuItem("Cake Details", CakePage(), path: CakePage.path),
     SubMenuItem("Recipe List", RecipeListPage(), path: RecipeListPage.path),
@@ -265,6 +269,7 @@ final List<dynamic> pages = [
         path: HotelDetailsPage.path),
   ]),
   MenuItem(title: "Navigation", icon: Icons.menu, items: [
+    SubMenuItem("Menu One", MenuOnePage(), path: MenuOnePage.path),
     SubMenuItem("Hidden Menu", HiddenMenuPage(), path: HiddenMenuPage.path),
     SubMenuItem("Dark Drawer Menu", DarkDrawerPage(),
         path: DarkDrawerPage.path),
